@@ -29,7 +29,7 @@ SECRET_KEY = 'django-insecure-9a1m$%^)=-5@toh&2+1n$l)6(teon)w(3c7j=+6av(29zogbrm
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['paperpulse-backend.onrender.com'],
 
 
 # Application definition
