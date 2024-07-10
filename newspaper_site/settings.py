@@ -90,8 +90,8 @@ MIDDLEWARE = [
 
 CORS_ALLOWED_ORIGINS = [
     'http://localhost:3000',
-    'https://paperpulse.vercel.app/',
-    'http://paperpulse.vercel.app/',
+    'https://paperpulse.vercel.app',
+    'http://paperpulse.vercel.app',
 ]
 
 ROOT_URLCONF = 'newspaper_site.urls'
