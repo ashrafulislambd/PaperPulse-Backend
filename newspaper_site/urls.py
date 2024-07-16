@@ -16,6 +16,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include, get_resolver
+from django.conf.urls.static import static
+from django.conf import settings
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -24,7 +26,7 @@ urlpatterns = [
     path('accounts/', include("drf_registration.urls")),
     path('userprofile/', include("userprofile.urls")),
     path('article/', include("article.urls")),
-]
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 for pattern in get_resolver().url_patterns:
     print(pattern)

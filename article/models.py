@@ -23,6 +23,7 @@ class Article(models.Model):
     publishing_time = models.DateTimeField(auto_now_add=True)
     total_rating = models.IntegerField(default=0)
     rating_count = models.IntegerField(default=0)
+    image = models.ImageField(upload_to="article/media", null=True, blank=True)
 
     def avg_rating(self):
         if self.rating_count == 0:

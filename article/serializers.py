@@ -6,7 +6,7 @@ from .models import Article, Rating, Category
 class ArticleSerializer(serializers.ModelSerializer):
     class Meta:
         model = Article
-        fields = ['id', 'headline', 'body', 'publishing_time', 'avg_rating', 'editor', 'category']
+        fields = ['id', 'headline', 'body', 'publishing_time', 'avg_rating', 'editor', 'category', 'image']
 
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
